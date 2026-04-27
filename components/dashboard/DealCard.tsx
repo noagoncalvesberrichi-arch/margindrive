@@ -1,5 +1,5 @@
 "use client";
-import { Star, MapPin, Clock, TrendingUp, AlertTriangle, ExternalLink } from "lucide-react";
+import { Star, MapPin, Clock, TrendingUp, ExternalLink } from "lucide-react";
 import { formatPrice, formatKm, getRiskColor, getRiskLabel, getScoreColor } from "@/lib/utils";
 import type { MOCK_DEALS } from "@/lib/mock-data";
 

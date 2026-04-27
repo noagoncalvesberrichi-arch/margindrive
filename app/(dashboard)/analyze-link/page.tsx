@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import { ArrowRight, ChevronDown, Loader2, CheckCircle2, AlertTriangle, TrendingUp } from "lucide-react";
 import { MARQUES } from "@/lib/mock-data";
 import { simulateAnalysis, formatPrice, getRiskLabel, getScoreColor } from "@/lib/utils";
@@ -110,14 +109,14 @@ function ResultPanel({ result, label }: { result: AnalysisResult; label: string 
         <div className="card card-md">
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 14 }}>
             <AlertTriangle size={12} style={{ color: "#fb923c" }} />
-            <span className="section-label" style={{ color: "#fb923c" }}>Points d'attention</span>
+            <span className="section-label" style={{ color: "#fb923c" }}>Points d&apos;attention</span>
           </div>
           {result.points_negatifs.length ? result.points_negatifs.map(p => (
             <div key={p} style={{ display: "flex", gap: 8, marginBottom: 9 }}>
               <span style={{ color: "#fb923c", fontSize: 11, marginTop: 1, flexShrink: 0 }}>⚠</span>
               <span style={{ fontSize: 13, color: "var(--text-2)", lineHeight: 1.5 }}>{p}</span>
             </div>
-          )) : <p style={{ fontSize: 13, color: "#4a4a4a" }}>Aucun point d'attention majeur.</p>}
+          )) : <p style={{ fontSize: 13, color: "#4a4a4a" }}>{`Aucun point d'attention majeur.`}</p>}
         </div>
       </div>
 
@@ -151,7 +150,7 @@ function ResultPanel({ result, label }: { result: AnalysisResult; label: string 
       {/* Actions */}
       <div style={{ display: "flex", gap: 8 }}>
         <button className="btn-cream" style={{ flex: 1, justifyContent: "center" }}>
-          Sauvegarder l'analyse <ArrowRight size={12} />
+          {`Sauvegarder l'analyse`} <ArrowRight size={12} />
         </button>
         <button className="btn-outline" onClick={() => window.location.reload()}>
           Nouvelle analyse
@@ -167,7 +166,7 @@ function LinkForm({ onAnalyze }: { onAnalyze: () => void }) {
   return (
     <div style={{ maxWidth: 700, margin: "0 auto" }}>
       <div className="card card-lg">
-        <FL>Lien de l'annonce</FL>
+        <FL>{`Lien de l'annonce`}</FL>
         <input
           type="url"
           className="input-md"
@@ -292,7 +291,7 @@ function ManualForm({ onAnalyze }: { onAnalyze: (d: ManualFormData) => void }) {
 
           {/* Description */}
           <div>
-            <FL>Description de l'annonce</FL>
+            <FL>{`Description de l'annonce`}</FL>
             <textarea
               className="input-md"
               rows={3}
@@ -308,7 +307,7 @@ function ManualForm({ onAnalyze }: { onAnalyze: (d: ManualFormData) => void }) {
             style={{ width: "100%", justifyContent: "center", padding: "13px", opacity: valid ? 1 : 0.4, cursor: valid ? "pointer" : "not-allowed" }}
             onClick={() => valid && onAnalyze(form)}
           >
-            Lancer l'analyse <ArrowRight size={12} />
+            {`Lancer l'analyse`} <ArrowRight size={12} />
           </button>
         </div>
       </div>

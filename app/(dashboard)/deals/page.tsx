@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { RefreshCw, Lock, ChevronDown, ArrowRight } from "lucide-react";
-import { formatPrice } from "@/lib/utils";
 
 const SOURCES = ["Tous", "Leboncoin", "La Centrale", "AutoScout24", "Mobile.de"];
 const MARQUES = ["Tous", "BMW", "Mercedes", "Volkswagen", "Audi", "Peugeot", "Renault"];

@@ -77,7 +77,7 @@ export default function LoginPage() {
             borderRadius: 10, padding: "20px 22px",
           }}>
             <p style={{ fontSize: 13, color: "#7A7A88", fontStyle: "italic", lineHeight: 1.7, marginBottom: 10 }}>
-              "J'ai récupéré le coût de l'abonnement dès ma première analyse. C'est désormais un outil indispensable."
+              {`"J'ai récupéré le coût de l'abonnement dès ma première analyse. C'est désormais un outil indispensable."`}
             </p>
             <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 9, color: "#4A4A58", letterSpacing: "0.05em" }}>
               — THOMAS M. · REVENDEUR INDÉPENDANT · LYON

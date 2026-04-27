@@ -62,7 +62,7 @@ export default function RegisterPage() {
             Détectez les affaires<br />avant tout le monde.
           </h2>
           <p style={{ fontSize: 14, color: "#4A4A58", lineHeight: 1.8, marginBottom: 40, maxWidth: 340 }}>
-            Rejoignez les revendeurs automobiles qui transforment leur activité grâce à l'analyse intelligente.
+            {`Rejoignez les revendeurs automobiles qui transforment leur activité grâce à l'analyse intelligente.`}
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 52 }}>
@@ -94,7 +94,7 @@ export default function RegisterPage() {
               ))}
             </div>
             <p style={{ fontSize: 13, color: "#7A7A88", fontStyle: "italic", lineHeight: 1.7, marginBottom: 10 }}>
-              "J'ai récupéré le coût de l'abonnement dès ma première analyse."
+              {`"J'ai récupéré le coût de l'abonnement dès ma première analyse."`}
             </p>
             <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 9, color: "#4A4A58", letterSpacing: "0.1em" }}>
               — THOMAS M. · LYON
@@ -217,7 +217,7 @@ export default function RegisterPage() {
             <label style={{ display: "flex", alignItems: "flex-start", gap: 9, cursor: "pointer" }}>
               <input type="checkbox" style={{ accentColor: "#C5A558", width: 13, height: 13, marginTop: 2, flexShrink: 0 }} />
               <span style={{ fontSize: 12, color: "#4A4A58", lineHeight: 1.65 }}>
-                J'accepte les <a href="#" style={{ color: "#7A7A88", textDecoration: "underline" }}>CGV</a> et la{" "}
+                J&apos;accepte les <a href="#" style={{ color: "#7A7A88", textDecoration: "underline" }}>CGV</a> et la{" "}
                 <a href="#" style={{ color: "#7A7A88", textDecoration: "underline" }}>politique de confidentialité</a>
               </span>
             </label>
@@ -228,7 +228,7 @@ export default function RegisterPage() {
           </form>
 
           <p style={{ marginTop: 16, textAlign: "center", fontSize: 11, color: "#252530" }}>
-            Aucune carte bancaire requise pour l'essai.
+            {`Aucune carte bancaire requise pour l'essai.`}
           </p>
         </div>
       </div>

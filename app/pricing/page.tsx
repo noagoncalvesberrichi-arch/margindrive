@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/shared/Footer";
 
@@ -279,10 +279,10 @@ export default function PricingPage() {
               style={{ marginTop: 2, accentColor: "#C5A558", width: 14, height: 14, flexShrink: 0, cursor: "pointer" }}
             />
             <label htmlFor="terms" style={{ fontSize: 12, color: "#4A4A58", lineHeight: 1.75, cursor: "pointer" }}>
-              En validant mon achat, j'accepte les{" "}
+              {`En validant mon achat, j'accepte les`}{" "}
               <a href="#" style={{ color: "#7A7A88", textDecoration: "underline" }}>CGV</a>,
-              je reconnais que l'accès est immédiat et renonce à mon droit de rétractation.
-              Aucun remboursement ne peut être effectué après l'achat.
+              {`je reconnais que l'accès est immédiat et renonce à mon droit de rétractation.`}
+              {`Aucun remboursement ne peut être effectué après l'achat.`}
             </label>
           </div>
         </div>

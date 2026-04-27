@@ -119,12 +119,12 @@ export default function SubscriptionPage() {
                 style={{ padding: "10px 20px", fontSize: 11 }}
                 onClick={() => setShowCancel(true)}
               >
-                Résilier l'abonnement
+                {`Résilier l'abonnement`}
               </button>
             )}
             {CURRENT_PLAN.cancelling && (
               <button className="btn-cream" style={{ padding: "10px 20px", fontSize: 11 }}>
-                Réactiver l'abonnement
+                {`Réactiver l'abonnement`}
               </button>
             )}
           </div>
@@ -147,7 +147,7 @@ export default function SubscriptionPage() {
               </h3>
             </div>
             <p style={{ color: "#666", fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>
-              Votre accès Premium restera actif jusqu'au <strong style={{ color: "#aaa" }}>24/05/2026</strong>.
+              {`Votre accès Premium restera actif jusqu'au `}<strong style={{ color: "#aaa" }}>24/05/2026</strong>.
               Aucun remboursement ne sera effectué conformément aux CGV.
             </p>
             <div style={{ display: "flex", gap: 10 }}>

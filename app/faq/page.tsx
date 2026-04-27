@@ -173,7 +173,7 @@ export default function FAQPage() {
             {filtered.length === 0 && (
               <div style={{ textAlign: "center", padding: "60px 0" }}>
                 <p style={{ fontSize: 14, color: "#555" }}>Aucun résultat pour « {search} »</p>
-                <p style={{ fontSize: 12, color: "#333", marginTop: 4 }}>Essayez avec d'autres mots-clés</p>
+                <p style={{ fontSize: 12, color: "#333", marginTop: 4 }}>{`Essayez avec d'autres mots-clés`}</p>
               </div>
             )}
           </div>

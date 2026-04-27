@@ -68,7 +68,7 @@ function Hero() {
             </div>
 
             <h1 className="h1" style={{ marginBottom: 24 }}>
-              L'analyse qui fait<br />
+              L&apos;analyse qui fait<br />
               la différence entre<br />
               <span style={{ color: "#C5A558" }}>affaire et erreur.</span>
             </h1>
@@ -236,7 +236,7 @@ function HowItWorks() {
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: 56, flexWrap: "wrap", gap: 24 }}>
           <div>
             <span className="eyebrow" style={{ display: "inline-block", marginBottom: 14 }}>Méthode</span>
-            <h2 className="h2">De l'annonce<br />à la décision.</h2>
+            <h2 className="h2">De l&apos;annonce<br />à la décision.</h2>
           </div>
           <p style={{ fontSize: 14, color: "#4A4A58", maxWidth: 280, lineHeight: 1.8 }}>
             Trois étapes. Un rapport complet. La certitude pour décider.
@@ -294,7 +294,7 @@ function FinalCTA() {
               Commencez à investir<br />avec les bons chiffres.
             </h2>
             <p style={{ fontSize: 14, color: "#4A4A58", lineHeight: 1.85, maxWidth: 400 }}>
-              Rejoignez les professionnels de l'achat-revente qui s'appuient sur les données marché pour chaque décision.
+              {`Rejoignez les professionnels de l'achat-revente qui s'appuient sur les données marché pour chaque décision.`}
             </p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "flex-start", flexShrink: 0 }}>
